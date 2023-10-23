@@ -8,6 +8,7 @@ const App = () => {
     const [nextId, setNextId] = useState(tasks.length + 2)
     const addTask = (newTask) => {
       setTask(tasks => [...tasks, newTask])
+      setNextId(nextId + 1)
     }
   return (
     <div className="App">
