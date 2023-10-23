@@ -1,0 +1,11 @@
+.App {
+    background-color: #B6E7F9;
+    color: #023D47;
+    width: 100%;
+    height: 707px;
+  }
+  
+  .dark-mode {
+    background-color: #5213B8;
+    color: #FAF6FF;
+  }

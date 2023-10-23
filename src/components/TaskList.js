@@ -1,7 +1,7 @@
 import React from 'react';
 import { Task } from './Task';
 
-export const TaskList = ({ tasks, setTask, addTask }) => {
+export const TaskList = ({ tasks, setTask }) => {
 
   const deleteTask = (id) => {
       setTask(tasks.filter((task) => task.id !== id));
