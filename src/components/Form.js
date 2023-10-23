@@ -15,7 +15,7 @@ export const Form = ({ nextId, addTask }) => {
         addTask(newValue)
         setText('')
     }
-    
+
     return (
         <form onSubmit={handleSubmit}>
             <input 

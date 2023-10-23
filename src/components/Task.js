@@ -5,7 +5,7 @@ export const Task = ({ task, deleteTask }) => {
     return (
         <div>
            <li>{task.text}</li>
-           <button>🗑️</button> 
+           <button onClick={() => deleteTask(task.id)}>🗑️</button> 
         </div>
        
     )

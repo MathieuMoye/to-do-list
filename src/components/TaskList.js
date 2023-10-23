@@ -1,14 +1,19 @@
 import React from 'react';
 import { Task } from './Task';
 
-export const TaskList = ({ tasks, setTasks, addTask, deleteTask }) => {
+export const TaskList = ({ tasks, setTask, addTask }) => {
+
+  const deleteTask = (id) => {
+      setTask(tasks.filter((task) => task.id !== id));
+    };
+
     return (
       <ul>
         {
           tasks.map(task => {
-           return <Task task={task} deleteTask={deleteTask}/>
+           return <Task key={task.id} task={task} deleteTask={deleteTask}/>
           })
         }
       </ul>
     )
-}
+};

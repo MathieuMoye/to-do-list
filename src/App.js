@@ -9,16 +9,10 @@ const App = () => {
     const addTask = (newTask) => {
       setTask(tasks => [...tasks, newTask])
     }
-
-    const deleteTask = () => {
-      setTask(tasks.filter(task => {
-        return [...tasks, task]
-      }))
-    }
   return (
     <div className="App">
       <Form addTask={addTask} nextId={nextId} />
-      <TaskList tasks={tasks} setTask={setTask} addTask={addTask} deleteTask={deleteTask}/>
+      <TaskList tasks={tasks} setTask={setTask} addTask={addTask}/>
     </div>
   );
 }
