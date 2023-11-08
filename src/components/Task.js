@@ -1,12 +1,13 @@
 import React from 'react';
+import '../styles/Task.css'
 
 export const Task = ({ task, deleteTask }) => {
   
     return (
-        <div>
-            <input type='checkbox'/>
-           <li>{task.text}</li>
-           <button onClick={() => deleteTask(task.id)}>🗑️</button> 
+        <div className='task-container'>
+           <input className='task-input' type='checkbox'/>
+           <li className='task-list'>{task.text}</li>
+           <button className='task-button' onClick={() => deleteTask(task.id)}>🗑️</button> 
         </div>
        
     )

@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
-
+import '../styles/Form.css';
 
 export const Form = ({ nextId, addTask }) => {
     const [text, setText] = useState('')
     
     const handleSubmit = (e) => {
         e.preventDefault()
-        // pas besoin de récupérer la valeur du champ nommé "id"
-        // on utilise directement la valeur de nextId
         if(text.trim() !== '') {
           const newValue = {
             id: nextId, 
@@ -22,15 +20,16 @@ export const Form = ({ nextId, addTask }) => {
         };
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form className='form' onSubmit={handleSubmit}>
             <input 
+        className='form-input'
             type='text'
             name='text' 
             value={text}
             placeholder="Ton programme du jour"
             onChange={(e) => setText(e.target.value)}
          />
-         <button>Envoyer</button>
+         <button className='form-button'>➕</button>
         </form>
     )
 }

@@ -1,0 +1,23 @@
+.form {
+    margin-left: 625px;
+}
+
+.form-input {
+    border: none;
+    width: 250px;
+    height: 25px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+}
+
+::placeholder {
+    color:black;
+}
+
+.form-button {
+    margin-left: -40px;
+    height: 25px;
+    width: 40px;
+    border: none;
+    background-color: white;
+}
