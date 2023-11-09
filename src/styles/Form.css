@@ -3,7 +3,6 @@
 }
 
 .form-input {
-    border: none;
     width: 250px;
     height: 25px;
     font-family: 'Quicksand', sans-serif;
@@ -11,11 +10,11 @@
 }
 
 ::placeholder {
-    color:black;
+    color: black;
 }
 
 .form-button {
-    margin-left: -40px;
+    margin-left: -45px;
     height: 25px;
     width: 40px;
     border: none;

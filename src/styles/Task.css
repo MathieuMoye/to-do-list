@@ -1,3 +1,17 @@
 .task-container {
     margin-left: 450px;
+    display: flex;
+}
+
+.task-input {
+    flex-direction: row;
+}
+
+.task-list {
+    list-style-type: none;
+}
+
+.task-button {
+    margin-left: 25px;
+    border-radius: 45%;
 }

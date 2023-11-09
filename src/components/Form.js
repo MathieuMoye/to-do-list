@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/Form.css';
 
-export const Form = ({ nextId, addTask }) => {
+export const Form = ({ nextId, addTask, appStyle }) => {
     const [text, setText] = useState('')
     
     const handleSubmit = (e) => {
@@ -22,7 +22,8 @@ export const Form = ({ nextId, addTask }) => {
     return (
         <form className='form' onSubmit={handleSubmit}>
             <input 
-        className='form-input'
+            autocomplete="off"
+            className='form-input'
             type='text'
             name='text' 
             value={text}
